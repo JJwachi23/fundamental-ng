@@ -1,10 +1,23 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
   title = 'fundamental-ng';
+  value = 0;
+  constructor(
+
+  ) { }
+
+  ngOnInit() {
+
+  }
+
+  calculate(value: string) {
+    const price = Number(value);
+    this.value = (price * 3) / 4;
+  }
 }
