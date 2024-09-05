@@ -8,9 +8,8 @@ import { Component, OnInit } from '@angular/core';
 export class AppComponent implements OnInit {
   title = 'fundamental-ng';
   value = 0;
-  constructor(
 
-  ) { }
+  constructor() { }
 
   ngOnInit() {
 
@@ -19,5 +18,13 @@ export class AppComponent implements OnInit {
   calculate(value: string) {
     const price = Number(value);
     this.value = (price * 3) / 4;
+  }
+
+  testClick() {
+    console.log('test event binding');
+  }
+
+  testNumberChange(value: any) {
+    console.log('test number changed: ', value);
   }
 }

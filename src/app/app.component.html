@@ -1,6 +1,14 @@
-<label>มา 4 จ่าย 3</label>
+<!-- <label>มา 4 จ่าย 3</label>
 <div>
   <input #priceBuffetInput type="text" placeholder="ราคาบุฟเฟ่ต์" />
   <button (click)="calculate(priceBuffetInput.value)">คำนวณ</button>
 </div>
-<p>คนละ {{ value }} บาท</p>
+<p>คนละ {{ value }} บาท</p> -->
+<app-action-bar
+  (numberChange)="testNumberChange($event)"
+  [step]="2"
+></app-action-bar>
+<app-action-bar
+  (numberChange)="testNumberChange($event)"
+  [step]="0.5"
+></app-action-bar>
