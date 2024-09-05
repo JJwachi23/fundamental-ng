@@ -4,11 +4,16 @@
   <button (click)="calculate(priceBuffetInput.value)">คำนวณ</button>
 </div>
 <p>คนละ {{ value }} บาท</p> -->
-<app-action-bar
+<!-- <app-action-bar
   (numberChange)="testNumberChange($event)"
   [step]="2"
 ></app-action-bar>
 <app-action-bar
   (numberChange)="testNumberChange($event)"
   [step]="0.5"
-></app-action-bar>
+></app-action-bar> -->
+
+<app-max-min-meter
+  [minLabel]="appMinLabel"
+  [maxLabel]="appMaxLabel"
+></app-max-min-meter>

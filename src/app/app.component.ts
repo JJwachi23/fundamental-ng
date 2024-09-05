@@ -9,6 +9,9 @@ export class AppComponent implements OnInit {
   title = 'fundamental-ng';
   value = 0;
 
+  appMinLabel = 'myAppMinLabel';
+  appMaxLabel = 'myAppMaxLabel';
+
   constructor() { }
 
   ngOnInit() {
