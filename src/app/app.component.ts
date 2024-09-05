@@ -30,4 +30,12 @@ export class AppComponent implements OnInit {
   testNumberChange(value: any) {
     console.log('test number changed: ', value);
   }
+
+  doAppMinChange(value: any) {
+    console.log('test min change ', value);
+  }
+
+  doAppMaxChange(value: any) {
+    console.log('test max change ', value);
+  }
 }

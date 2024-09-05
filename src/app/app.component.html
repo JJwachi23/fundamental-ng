@@ -16,4 +16,6 @@
 <app-max-min-meter
   [minLabel]="appMinLabel"
   [maxLabel]="appMaxLabel"
+  (minChange)="doAppMinChange($event)"
+  (maxChange)="doAppMaxChange($event)"
 ></app-max-min-meter>
