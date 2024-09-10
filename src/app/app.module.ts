@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { ActionBarComponent } from './components/action-bar/action-bar.component';
 import { MaxMinMeterComponent } from './components/max-min-meter/max-min-meter.component';
 import { SquareFlexComponent } from './components/square-flex/square-flex.component';
+import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { SquareFlexComponent } from './components/square-flex/square-flex.compon
     AppRoutingModule
   ],
   providers: [
-    provideClientHydration()
+    provideClientHydration(),
+    provideAnimationsAsync()
   ],
   bootstrap: [AppComponent]
 })
