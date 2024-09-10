@@ -36,5 +36,6 @@
   <button type="button" (click)="squareHight=250">250px</button>
 </div> -->
 
-<app-action-bar></app-action-bar>
-<app-square-flex></app-square-flex>
+<!-- <app-action-bar [counter]="appCounterWidth" (counterChange)="appCounterWidth = $event" [step]="10"></app-action-bar> -->
+<app-action-bar [(counter)]="appCounterWidth" [step]="40"></app-action-bar>
+<app-square-flex [divWidth]="appCounterWidth" [divHight]="20"></app-square-flex>

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -8,12 +8,15 @@ import { Component, OnInit } from '@angular/core';
 export class AppComponent implements OnInit {
   title = 'fundamental-ng';
   value = 0;
+  @Input() counter = 1;
 
   appMinLabel = 'myAppMinLabel';
   appMaxLabel = 'myAppMaxLabel';
 
   squareWidth = 250;
   squareHight = 100;
+
+  appCounterWidth = 10;
 
   constructor() { }
 
@@ -41,4 +44,5 @@ export class AppComponent implements OnInit {
   doAppMaxChange(value: any) {
     console.log('test max change ', value);
   }
+
 }

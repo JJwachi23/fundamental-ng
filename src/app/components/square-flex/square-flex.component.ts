@@ -7,7 +7,7 @@ import { Component, Input } from '@angular/core';
 })
 export class SquareFlexComponent {
 
-  @Input() divWidth = 200;
-  @Input() divHight = 200;
+  @Input() divWidth = 10;
+  @Input() divHight = 10;
 
 }

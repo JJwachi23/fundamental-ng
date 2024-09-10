@@ -7,6 +7,7 @@ import { ActionBarComponent } from './components/action-bar/action-bar.component
 import { MaxMinMeterComponent } from './components/max-min-meter/max-min-meter.component';
 import { SquareFlexComponent } from './components/square-flex/square-flex.component';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
+import { FormsModule } from '@angular/forms'
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { provideAnimationsAsync } from '@angular/platform-browser/animations/asy
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
   ],
   providers: [
     provideClientHydration(),
