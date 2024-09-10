@@ -12,6 +12,9 @@ export class AppComponent implements OnInit {
   appMinLabel = 'myAppMinLabel';
   appMaxLabel = 'myAppMaxLabel';
 
+  squareWidth = 250;
+  squareHight = 100;
+
   constructor() { }
 
   ngOnInit() {

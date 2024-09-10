@@ -13,9 +13,28 @@
   [step]="0.5"
 ></app-action-bar> -->
 
-<app-max-min-meter
+<!-- <app-max-min-meter
   [minLabel]="appMinLabel"
   [maxLabel]="appMaxLabel"
   (minChange)="doAppMinChange($event)"
   (maxChange)="doAppMaxChange($event)"
-></app-max-min-meter>
+></app-max-min-meter> -->
+
+<!-- <app-square-flex [divWidth]="squareWidth" [divHight]="squareHight"></app-square-flex>
+<div style="margin-top: 10px;">
+  <span>width: </span>
+  <button type="button" (click)="squareWidth=50">50px</button>
+  <button type="button" (click)="squareWidth=100">100px</button>
+  <button type="button" (click)="squareWidth=200">200px</button>
+  <button type="button" (click)="squareWidth=250">250px</button>
+</div>
+<div style="margin-top: 10px;">
+  <span>height: </span>
+  <button type="button" (click)="squareHight=50">50px</button>
+  <button type="button" (click)="squareHight=100">100px</button>
+  <button type="button" (click)="squareHight=200">200px</button>
+  <button type="button" (click)="squareHight=250">250px</button>
+</div> -->
+
+<app-action-bar></app-action-bar>
+<app-square-flex></app-square-flex>
