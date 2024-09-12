@@ -40,11 +40,12 @@
 <!-- <app-action-bar [(counter)]="appCounterWidth" [step]="40"></app-action-bar>
 <app-square-flex [divWidth]="appCounterWidth" [divHight]="appCounterWidth"></app-square-flex> -->
 
-<!-- Struc -->
-<button type="button" (click)="activate=true">Click Me!</button>
-<div *ngIf="activate">
+<!-- <button type="button" (click)="activate=true">Click Me!</button>
+<div *ngIf="activate else elseTemplate">
   <app-action-bar></app-action-bar>
 </div>
-<div>
-  <p>activate now</p>
-</div>
+<ng-template #elseTemplate>
+  <div>
+    <p>activate now</p>
+  </div>
+</ng-template> -->
