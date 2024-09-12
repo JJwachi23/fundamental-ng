@@ -20,7 +20,13 @@ export class AppComponent implements OnInit {
 
   activate: boolean = false;
 
-  constructor() { }
+  customerList: string[] = ['customer1', 'customer2', 'customer3', 'customer4'];
+
+  constructor() {
+    for (let something of this.customerList) {
+      console.log(something);
+    }
+  }
 
   ngOnInit() {
 
