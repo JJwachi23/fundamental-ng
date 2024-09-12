@@ -18,6 +18,8 @@ export class AppComponent implements OnInit {
 
   appCounterWidth = 10;
 
+  activate: boolean = false;
+
   constructor() { }
 
   ngOnInit() {
@@ -29,8 +31,8 @@ export class AppComponent implements OnInit {
     this.value = (price * 3) / 4;
   }
 
-  testClick() {
-    console.log('test event binding');
+  testClick(value: any) {
+    console.log('test', value);
   }
 
   testNumberChange(value: any) {

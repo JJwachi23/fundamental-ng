@@ -37,5 +37,14 @@
 </div> -->
 
 <!-- <app-action-bar [counter]="appCounterWidth" (counterChange)="appCounterWidth = $event" [step]="10"></app-action-bar> -->
-<app-action-bar [(counter)]="appCounterWidth" [step]="40"></app-action-bar>
-<app-square-flex [divWidth]="appCounterWidth" [divHight]="20"></app-square-flex>
+<!-- <app-action-bar [(counter)]="appCounterWidth" [step]="40"></app-action-bar>
+<app-square-flex [divWidth]="appCounterWidth" [divHight]="appCounterWidth"></app-square-flex> -->
+
+<!-- Struc -->
+<button type="button" (click)="activate=true">Click Me!</button>
+<div *ngIf="activate">
+  <app-action-bar></app-action-bar>
+</div>
+<div>
+  <p>activate now</p>
+</div>

@@ -19,7 +19,7 @@ export class ActionBarComponent implements OnInit {
   }
 
   decrease() {
-    if (this.counter > 0) {
+    if (this.counter > 10) {
       this.counter = this.counter - this.step;
       // console.log(this.counter);
       this.counterChange.emit(this.counter);
